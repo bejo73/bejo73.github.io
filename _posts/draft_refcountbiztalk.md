@@ -1,6 +1,12 @@
 Ref counts
 Ref counts show that there are messages in the messagebox without any references, or the other way around. It's not a critical error unless the amount is high and impacting the performance for the environment.
 
+SELECT * FROM [OSLCLU001QMSG\MSGBOX].[BizTalkMsgBoxDb].[dbo].[MessageRefCountLogTotals] WHERE [snRefCount] < 0
+
+
+
+
+
 
 Storing only a reference to any message on the host queues enables each message to be processed by multiple hosts but be stored only once. Each instance of a particular host will poll its main queue table (for example, the HostAq table in the figure), which contains the message reference. The message content itself will be accessed through the Spool, MessageParts, Parts, and Fragments tables.
 When a message is routed only to one subscriber, once it has finished processing a reference will immediately be inserted into the MessageZeroSum table, which is used to mark the physical messages for clean up by a job running within SQL Server Agent. This means that these types of messages will be cleaned up very quickly from the MessageBox database.
