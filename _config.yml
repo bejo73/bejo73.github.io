@@ -11,6 +11,8 @@ description: Job related technical stuff shared to those interested
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
+theme: Architect
+
 #
 # Flags below are optional
 #
