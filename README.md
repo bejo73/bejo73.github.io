@@ -1,92 +1,92 @@
-# The Architect theme
+# Architect theme
 
-[![Build Status](https://travis-ci.org/pages-themes/architect.svg?branch=master)](https://travis-ci.org/pages-themes/architect) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-architect.svg)](https://badge.fury.io/rb/jekyll-theme-architect)
+This is a [Jekyll][1] theme that is an adaptation of [@jasonlong][2]'s [Architect theme][4] on [GitHub Pages][3].
 
-*Architect is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/architect), or even [use it today](#usage).*
+This is the raw HTML and styles that are used for the *Architect* theme on [GitHub Pages](http://pages.github.com/).
 
-![Thumbnail of architect](thumbnail.png)
+![](http://cl.ly/image/1x0Q3213330G/content)
 
-## Usage
+# Getting Started
 
-To use the Architect theme:
+## Prerequisites
 
-1. Add the following to your site's `_config.yml`:
+To install this theme, jekyll is required to be installed on your system. Head over to the [docs](https://jekyllrb.com/docs/installation/) and install the four requirements (Ruby, RubyGems, Node.js and Python 2.7). If you're on a Mac system, it's likely the only package you'll need to install is Node.js
 
-    ```yml
-    theme: jekyll-theme-architect
-    ```
+Once you've installed the requirements, run this command in your terminal:
 
-2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
-
-    ```ruby
-    gem "github-pages", group: :jekyll_plugins
-    ```
-
-
-
-## Customizing
-
-### Configuration variables
-
-Architect will respect the following variables, if set in your site's `_config.yml`:
-
-```yml
-title: [The title of your site]
-description: [A short description of your site's purpose]
+```
+$ sudo gem install jekyll
 ```
 
-Additionally, you may choose to set the following optional variables:
+You'll also need to install the bundler package:
 
-```yml
-show_downloads: ["true" or "false" to indicate whether to provide a download URL]
-google_analytics: [Your Google Analytics tracking ID]
+```
+$ sudo gem install bundler
 ```
 
-### Stylesheet
+## Downloading and Installing the theme
 
-If you'd like to add your own custom styles:
+Download the theme
 
-1. Create a file called `/assets/css/style.scss` in your site
-2. Add the following content to the top of the file, exactly as shown:
-    ```scss
-    ---
-    ---
+```
+http://github.com/pietromenna/jekyll-architect-theme/archive/master.zip
+```
 
-    @import "{{ site.theme }}";
-    ```
-3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
+Unzip it and use it as a regular jekyll folder.
 
-### Layouts
+```
+$ unzip jekyll-architect-theme-master.zip
+```
 
-If you'd like to change the theme's HTML layout:
+Get inside the newly extracted folder
 
-1. [Copy the original template](https://github.com/pages-themes/architect/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
-2. Create a file called `/_layouts/default.html` in your site
-3. Paste the default layout content copied in the first step
-4. Customize the layout as you'd like
+```
+$ cd jekyll-architect-theme-master
+```
 
-## Roadmap
+Install the dependencies
 
-See the [open issues](https://github.com/pages-themes/architect/issues) for a list of proposed features (and known issues).
+```
+$ bundle install
+```
 
-## Project philosophy
+Use it!
 
-The Architect theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
+```
+$ jekyll serve
+```
 
-## Contributing
+# Setup
 
-Interested in contributing to Architect? We'd love your help. Architect is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](CONTRIBUTING.md) for instructions on how to contribute.
+Some important configuration can be done in the file `_config.yml`. Please, check the Setup section in that file.
 
-### Previewing the theme locally
 
-If you'd like to preview the theme locally (for example, in the process of proposing a change):
+## baseurl
 
-1. Clone down the theme's repository (`git clone https://github.com/pages-themes/architect`)
-2. `cd` into the theme's directory
-3. Run `script/bootstrap` to install the necessary dependencies
-4. Run `bundle exec jekyll serve` to start the preview server
-5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
+`baseurl` parameter is required in the case the site doesn't sit on the root of the domain. For example: http://pietromenna.github.io/jekyll-architect-theme
 
-### Running tests
+In the case above the baseurl should be set to "/jekyll-architect-theme".
 
-The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` one before the test script will work.
+In the case the site sits in the root, you can leave `baseurl` as empty "".
+
+
+For more details read about [Jekyll][1] on its web page.
+
+# Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/pietromenn/jekyll-architect-theme.
+
+# Development
+
+To set up your environment to develop this theme, run `bundle install`.
+
+You theme is setup just like a normal Jelyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+# License
+
+This work is licensed under a [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/).
+
+[1]: http://jekyllrb.com
+[2]: https://github.com/jasonlong
+[3]: http://pages.github.com/
+[4]: http://github.com/jasonlong/architect-theme
