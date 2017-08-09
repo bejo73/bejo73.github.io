@@ -10,3 +10,13 @@ gems:
 #Others
 markdown: kramdown
 
+# Includes an icon in the footer for each username you enter
+footer-links:
+  email:
+  github: bejo73
+  instagram:
+  linkedin: jorgenbergstrom73
+  rss: # just type anything here for a working RSS icon
+  twitter: jrgnbrgstrm73
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: # channel/<your_long_string> or user/<user-name>
