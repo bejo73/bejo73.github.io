@@ -4,9 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+This is a space where I put some technical stuff... 
 
-### More Information
+### Info
+
 
 A place to include any other types of information that you'd like to include about yourself.
 
