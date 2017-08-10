@@ -25,7 +25,7 @@ Create a new Azure function and choose External File as input trigger.
 Select Dropbox as the API Connection.
 
 Bindings:
-![Screenshot](images/blog_function_bindings.png)
+![Screenshot](/images/blog_function_bindings.png)
 
 Function:
 
