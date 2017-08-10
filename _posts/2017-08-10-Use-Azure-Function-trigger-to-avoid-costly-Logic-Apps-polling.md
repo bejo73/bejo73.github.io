@@ -25,26 +25,16 @@ Create a new Azure function and choose External File as input trigger.
 Select Dropbox as the API Connection.
 
 Bindings:
-![Screenshot](/images/blog_function_bindings.png)
+![Screenshot](/images/blog/blog_2017-08-10-function_bindings.png)
 
 Function:
-
+![Screenshot](/images/blog/blog_2017-08-10-function_code.png)
 
 The function will call the Logic App, containing information about the newly created file.
+![Screenshot](/images/blog/blog_2017-08-10-logicapps_designer.png)
 
+![Screenshot](/images/blog/blog_2017-08-10-logicapps_codeview.png)
 
 The Logic App is triggered by the call from the Azure Function and the file can be processed.
 
 
-
-REMOVE
-------
-Today I stumbled into this great post when I was searching for functionality to create NuGet packages in MSBuild. This was even better:
-
-[https://ihadthisideaonce.com/2014/02/24/nuget-like-a-pro-the-msbuild-way/](https://ihadthisideaonce.com/2014/02/24/nuget-like-a-pro-the-msbuild-way/)
-
-The trick was to enable package restore and add this line:
-
-`<BuildPackage>true</BuildPackage>`
-
-Thanks to Jim Counts.

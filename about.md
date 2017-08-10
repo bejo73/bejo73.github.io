@@ -8,7 +8,9 @@ This is a space where I put some technical stuff...
 
 ### Info
 
-I am software/system/integration developer from Sweden, currently working with Logic Apps and Functions in Azure. 
+I am software/system/integration developer from Sweden, currently working with Logic Apps and Functions in Azure.
+
+Owner and senior consultant at TwoBITS AB.
 
 Passion for sports and music. Rides a Scott Scale 950 :)
 
