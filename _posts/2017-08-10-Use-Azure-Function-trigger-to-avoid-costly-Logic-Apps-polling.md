@@ -11,7 +11,7 @@ Polling every 10th second (one Logic App) for one month will generate
 6 * 60 * 24 * 30 => 259200 actions. 
 
 The monthly cost for this will be 250000 * 0,000675 + 9200 * 0,000338 = 171,8596 Euro
-(Actual prices 2017-08-11, See [Logic App]https://azure.microsoft.com/pricing/details/logic-apps)
+(Actual prices 2017-08-11, See [Logic App](https://azure.microsoft.com/pricing/details/logic-apps){:target="_blank"}
 
 Suppose we have at least 10 scenarios like this and the yearly cost will be
 approximately 172 * 10 * 12 = 20640 Euro
