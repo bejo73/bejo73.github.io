@@ -17,7 +17,7 @@ Suppose we have at least 10 scenarios like this and the yearly cost will be
 approximately 172 * 10 * 12 = 20640 Euro
 
 One way to eliminate (almost) the polling cost is to let Azure Function triggers do the job.
-The cost for that is almost nothing, only cost for storage account and execution 
+The cost for that is almost nothing (less than one Euro), only cost for storage account and execution 
 of function when the function is triggered.
 
 So how do we do this?
